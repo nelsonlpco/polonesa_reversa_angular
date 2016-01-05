@@ -29,9 +29,7 @@
                     return 3;
                 case '^':
                 case '%':
-                    return 4;
-                default:
-                    return 0;
+                    return 4;                
             }
         };
 
@@ -120,7 +118,7 @@
                     saida += valor;
                 } else if (eOperador(valor)) {
                     tmpPrioridade = obterPrioridade(valor);
-                    while ((lista.length != 0) && (lista[lista.length - 1].prioridade >= tmpPrioridade)) {
+                    while ((lista.length != 0) && (lista[lista.length - 1].prioridade >= tmpPrioridade) && (lista[lista.length - 1].val != '(')) {
                         saida += lista[lista.length - 1].val;
                         lista.pop();
                     }
@@ -170,6 +168,7 @@
                                 break;
                             case '*':
                                 lista.push(x * y);
+                                break;
                             case '/':
                                 lista.push(y / x);
                                 break;
