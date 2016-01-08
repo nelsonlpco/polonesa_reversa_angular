@@ -1,4 +1,4 @@
-# polonesa_reversa_angular
+# Polonesa Reversa - Angular Directive
 Uso da notação polonesa reversa para resolução de expressões matemáticas
 
 Para mais informações sobre a notação polonesa reversa: https://pt.wikipedia.org/wiki/Nota%C3%A7%C3%A3o_polonesa_inversa
